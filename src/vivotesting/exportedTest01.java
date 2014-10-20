@@ -102,7 +102,7 @@ public void testAdd1Plus1()
         } catch (Error e) {
           verificationErrors.append(e.toString());
         }
-        /**
+        
         try {
           assertTrue(isElementPresent(By.linkText("1964")));
         } catch (Error e) {
@@ -129,7 +129,7 @@ public void testAdd1Plus1()
           verificationErrors.append(e.toString());
         }
         try {
-          assertTrue(isElementPresent(By.linkText("1935")));
+          assertTrue(isElementPresent(By.linkText("1936")));
         } catch (Error e) {
           verificationErrors.append(e.toString());
         }
@@ -226,7 +226,7 @@ public void testAdd1Plus1()
         } catch (Error e) {
           verificationErrors.append(e.toString());
         }
-        **/
+
         
         // Go back to starting position
         driver.get("http://agcensus.mannlib.cornell.edu/AgCensus/");

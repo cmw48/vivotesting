@@ -1,8 +1,5 @@
 package vivotesting;
 
-
-
-
 import java.util.Iterator;
 import java.util.List;
 
@@ -13,14 +10,6 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
-
-
-
-
-
-
-
 
 import static org.junit.Assert.*;
 
@@ -36,13 +25,19 @@ public class basicTest {
          String query = "";
          String answer = "";
 //         Integer replyMsg = "";
-         //searchText = "Krafft";
+         searchText = "Krafft";
          //reply = SearchVivoForString(searchText);
         // exportedTest01 et1 = new exportedTest01();  
-         exportedTest01.testAdd1Plus1();
+         checkIfOnePlusOneIsTwo();
          //checkIfLastNameIsInVivo(searchText);
         // System.out.println("The answer is " + replyMsg + ".");
          answer = SearchWebApp(searchText);
+	}
+	
+	@Test
+	public static void checkIfOnePlusOneIsTwo(){
+		exportedTest01 et1 = new exportedTest01();  
+        et1.testAdd1Plus1();
 	}
 
 	@Test
