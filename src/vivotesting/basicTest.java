@@ -18,17 +18,18 @@ import org.junit.Test;
 
 public class basicTest {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
          System.out.println("SCC Initialization successful.");
          String searchText = "";
          String query = "";
          String answer = "";
 //         Integer replyMsg = "";
-         searchText = "Krafft";
+         searchText = "Krafft, D";
          //reply = SearchVivoForString(searchText);
         // exportedTest01 et1 = new exportedTest01();  
          checkIfOnePlusOneIsTwo();
+         tryToDoAgCensus();
          //checkIfLastNameIsInVivo(searchText);
         // System.out.println("The answer is " + replyMsg + ".");
          answer = SearchWebApp(searchText);
@@ -40,6 +41,12 @@ public class basicTest {
         et1.testAdd1Plus1();
 	}
 
+	@Test
+	public static void tryToDoAgCensus() throws Exception{
+		exportedTest01 et2 = new exportedTest01();  
+        et2.testCheckFrontPage();
+	}
+	
 	@Test
 	public static void checkIfLastNameIsInVivo(String searchText){
 	String baseurl = "http://vivo.cornell.edu";
